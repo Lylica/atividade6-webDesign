@@ -129,6 +129,52 @@ body{
     font-size: 1.8rem;
 }
 
+#brownie{
+    color:#5F4339;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
 
+#mousse{
+    color:#5F4339;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#torta{
+    color:#5F4339;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#rodape{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #5F4339, #8F6E5F);
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#cabecalho-rodape{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#instagram, #facebook, #youtube{
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#instagram:hover, #facebook:hover, #youtube:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 
