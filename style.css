@@ -177,4 +177,29 @@ body{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+#receita-bolo-imagem:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#receita-brigadeiro-imagem:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#receita-brownie-imagem:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#receita-moussedechocolate-imagem:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#receita-tortadelimao-imagem:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 
