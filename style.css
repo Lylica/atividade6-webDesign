@@ -1,3 +1,4 @@
+/* ===== BODY ===== */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -6,13 +7,14 @@ body{
     padding: 0 15px;
 }
 
+/* ===== TOPO ===== */
 #topo {
     background: linear-gradient(135deg, #5F4339, #8F6E5F);
     color: #fff;
     padding: 20px;
     text-align: center;
     border-radius: 0 0 12px 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 
 #titulo{
@@ -26,21 +28,32 @@ body{
     font-weight: normal;
 }
 
+/* ===== NAV LINKS ===== */
 #lista{
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .linksinternos a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
     color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 8px 15px;
-    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 0.5rem;
     transition: 0.3s;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    height: 4rem;
+    box-sizing: border-box;
 }
 
 .linksinternos a:hover{
@@ -48,39 +61,65 @@ body{
     color: #5F4339;
 }
 
+/* ===== RESPONSIVO NAV ===== */
+@media (max-width: 20rem) {
+    .linksinternos a {
+        font-size: 0.85rem;
+        height: 3.5rem;
+        padding: 0.3rem;
+    }
+}
+
+@media (min-width: 20.1rem) and (max-width: 37.5rem) {
+    .linksinternos a {
+        font-size: 0.95rem;
+        height: 3.8rem;
+        padding: 0.4rem;
+    }
+}
+
+/* ===== RECEITAS ===== */
 #receitas{
     max-width: 1000px;
     margin: 30px auto;
 }
 
-#receita-bolo, #receita-brigadeiro, #receita-brownie, #receita-moussedechocolate, #receita-tortadelimao{
+#receitas article{
     background: #fff;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-#bolo-de-chocolate{
-    color:#5F4339;
+#receitas h3{
+    color: #5F4339;
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
 
-#receita-bolo-imagem, #receita-brigadeiro-imagem, #receita-brownie-imagem, #receita-moussedechocolate-imagem, #receita-tortadelimao-imagem{
+/* ===== IMAGENS DAS RECEITAS ===== */
+#receitas img{
     width: 100%;
     max-height: 400px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
+#receitas img:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ===== TABELAS ===== */
 .tabela{
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px 0;
+    margin-bottom: 15px;
 }
 
 .coluna-tabela, .linha-tabela{
@@ -91,9 +130,10 @@ body{
 
 .coluna-tabela{
     background: #f0f8ff;
-    color:#5F4339;
+    color: #5F4339;
 }
 
+/* ===== PASSOS ===== */
 .lista-passos{
     margin: 15px 0;
     padding-left: 20px;
@@ -103,11 +143,13 @@ body{
     margin-bottom: 8px;
 }
 
+/* ===== DESCRICAO ===== */
 .descricao{
     margin: 15px 0;
     text-align: justify;
 }
 
+/* ===== VOLTAR AO INICIO ===== */
 .voltar-ao-inicio{
     display: inline-block;
     margin-top: 10px;
@@ -122,41 +164,14 @@ body{
     text-decoration: underline;
 }
 
-#brigadeiro{
-    color:#5F4339;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-#brownie{
-    color:#5F4339;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-#mousse{
-    color:#5F4339;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-#torta{
-    color:#5F4339;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
+/* ===== RODAPE ===== */
 #rodape{
     text-align: center;
     padding: 20px;
     background: linear-gradient(135deg, #5F4339, #8F6E5F);
     color: #fff;
     border-radius: 12px 12px 0 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.15);
 }
 
 #cabecalho-rodape{
@@ -164,42 +179,15 @@ body{
     margin-bottom: 10px;
 }
 
-#instagram, #facebook, #youtube{
+#rodape img{
     width: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s;
     height: 40px;
+    margin: 0 10px;
     border-radius: 50%;
+    transition: transform 0.3s;
 }
 
-#instagram:hover, #facebook:hover, #youtube:hover{
+#rodape img:hover{
     transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-#receita-bolo-imagem:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-#receita-brigadeiro-imagem:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-#receita-brownie-imagem:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-#receita-moussedechocolate-imagem:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-#receita-tortadelimao-imagem:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-
