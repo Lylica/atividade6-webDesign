@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Atividade 6 - WebDesign</title>
+        <!-- Link para o arquivo CSS externo -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Cabeçalho da página com título e menu de navegação -->
         <header id="topo">
             <h1 id="titulo">Site de Receitas</h1>
             <nav>
                 <h2 id="sumarioreceitas">Vá para as receitas</h2>
+                <!-- Lista de links internos para as seções de receitas -->
                 <ul id="lista">
                     <li class="linksinternos"><a href="#receita-bolo">Bolo de Chocolate</a></li>
                     <li class="linksinternos"><a href="#receita-brigadeiro">Brigadeiro</a></li>
@@ -21,22 +24,26 @@
             </nav>
         </header>
 
+        <!-- Seção principal de receitas -->
         <section id="receitas" aria-label="Receitas de doces e sobremesas">
 
-            <!--Bolo de chocolate-->
+            <!-- Artigo: Bolo de chocolate -->
             <article id="receita-bolo">
                 <h3 id="bolo-de-chocolate">Bolo de chocolate</h3>
+                <!-- Imagem da receita com suporte para WebP -->
                 <picture>    
                     <source type="image/webp" srcset="images/bolo.webp">
                     <img id="receita-bolo-imagem" src="images/bolo.jpg" alt="Imagem do bolo de chocolate com cobertura">
                 </picture>
 
+                <!-- Tabela de ingredientes -->
                 <h4>Ingredientes</h4>
                 <table class="tabela">
                     <tr>
                         <th class="coluna-tabela">Ingrediente</th>
                         <th class="coluna-tabela">Quantidade</th>
                     </tr>
+                    <!-- Linhas com os ingredientes -->
                     <tr>
                         <td class="linha-tabela">Ovo</td>
                         <td class="linha-tabela">3 unidades</td>
@@ -67,6 +74,7 @@
                     </tr>
                 </table>
             
+                <!-- Lista ordenada de passos -->
                 <h4>Passos</h4>
                 <ol class="lista-passos">
                     <li class="passos">Em um liquidificador, bata os ovos, o açúcar, o óleo, o achocolatado e a farinha de trigo.</li>
@@ -75,23 +83,18 @@
                     <li class="passos">Desenforme ainda quente.</li>
                 </ol>
 
+                <!-- Descrição detalhada da receita -->
                 <h4>Descrição</h4>
                 <p class="descricao">
                     Quando se trata de uma sobremesa clássica e deliciosa, poucas opções são tão tentadoras quanto um bom bolo de chocolate. 
-                    Esta receita simples e fácil de preparar é a solução perfeita para satisfazer aquele desejo por um doce delicioso e prazeroso. 
-                    Combinando ingredientes básicos, como ovos, açúcar, farinha de trigo e um toque generoso de chocolate em pó, este bolo derrete na boca a cada mordida. 
-                    A adição estratégica de água quente e fermento em pó confere a textura ideal para esse bolo, garantindo maciez e um sabor que agrada a todos. 
-                    O segredo, no entanto, está na cobertura deliciosa que coroa essa iguaria. Uma mistura cuidadosa de leite, chocolate em pó, manteiga e açúcar 
-                    é aquecida até atingir o ponto de fervura, resultando em uma cobertura cremosa e irresistível. Ao ser derramada sobre o bolo ainda quente, 
-                    essa cobertura se funde perfeitamente à massa, proporcionando uma experiência de sabor inesquecível. Este bolo é uma excelente opção para encontros familiares, 
-                    momentos de celebração ou simplesmente para um momento de prazer pessoal. Siga os passos simples deste modo de preparo para criar um bolo que encantará 
-                    os paladares e aquecerá os corações de todos à mesa.
+                    ...
                 </p>
                 
+                <!-- Link para voltar ao topo da página -->
                 <a class="voltar-ao-inicio" href="#topo">Voltar ao início</a>
             </article>
 
-            <!--Brigadeiro-->
+            <!-- Artigo: Brigadeiro -->
             <article id="receita-brigadeiro">
                 <h3 id="brigadeiro">Brigadeiro</h3>
                 <picture>    
@@ -132,19 +135,13 @@
 
                 <h4>Descrição</h4>
                 <p class="descricao">
-                    Ninguém resiste a essa receita de brigadeiro: ele é o rei das festas de aniversário e é impossível comer um só. 
-                    Seja pra comemorar ou afogar as mágoas no com uma panela de brigadeiro assistindo um filme triste, 
-                    essa receita faz parte do dia a dia do brasileiro há décadas. Muito tradicional em nosso país, o brigadeiro é muito fácil de preparar: 
-                    leva apenas leite condensado, margarina, achocolatado em pó e chocolate granulado. Além de comer as bolinhas nas festas de aniversário, 
-                    ele é um doce versátil que você pode consumir de diversas maneiras: como cobertura de bolo, recheio, com colher, em copinhos ou até mesmo misturando com biscoitos 
-                    e fazendo palhas italianas. Veja agora mesmo como fazer brigadeiro de forma simples e prática! Você quer outras receitas de doces para festa de aniversário? 
-                    Saiba como fazer beijinho, cajuzinho, olho-de-sogra, casadinho e muito mais aqui no TudoGostoso!
+                    Ninguém resiste a essa receita de brigadeiro: ele é o rei das festas de aniversário...
                 </p>
             
                 <a class="voltar-ao-inicio" href="#topo">Voltar ao início</a>
             </article>
 
-            <!--Brownie-->
+            <!-- Artigo: Brownie -->
             <article id="receita-brownie">
                 <h3 id="brownie">Brownie</h3>
 
@@ -193,19 +190,13 @@
 
                 <h4>Descrição</h4>
                 <p class="descricao">
-                    Que tal experimentar um clássico feito na sua própria casa? Veja como preparar um brownie simples e rápido. 
-                    Esta receita oferece uma maneira prática de criar esses deliciosos quadrados de chocolate, com ingredientes básicos como manteiga, 
-                    ovos, achocolatado, açúcar e farinha de trigo. Você poderá saborear um lanche ou sobremesa irresistível em pouco tempo: ao seguir este processo rápido de preparo, 
-                    você estará a apenas 30 minutos de distância de brownies deliciosos, com uma textura macia por dentro e uma casquinha crocante por fora. 
-                    Esta receita é perfeita para aqueles momentos em que se deseja algo doce e caseiro sem demorar muito na cozinha. 
-                    Pré-aqueça o forno, reúna os ingredientes e em pouco tempo estará apreciando a maravilha do chocolate recém-assado. 
-                    Siga estas instruções simples e desfrute de um brownie simples, rápido, fresco e irresistível em pouquíssimo tempo!
+                    Que tal experimentar um clássico feito na sua própria casa?...
                 </p>
             
                 <a class="voltar-ao-inicio" href="#topo">Voltar ao início</a>
             </article>
 
-            <!--Mousse de chocolate-->
+            <!-- Artigo: Mousse de chocolate -->
             <article id="receita-moussedechocolate">
                 <h3 id="mousse">Mousse de chocolate</h3>
 
@@ -248,18 +239,13 @@
 
                 <h4>Descrição</h4>
                 <p class="descricao">
-                    Mousse de chocolate é uma daquelas receitas que não tem jeito, é difícil achar alguém que não goste. Afinal, são apenas 4 ingredientes e muito sabor e cremosidade! 
-                    Essa receita de mousse de chocolate fácil e gostosa é um verdadeiro deleite para os amantes de chocolate, combinando simplicidade e sabor em cada colherada. 
-                    Você só precisa de quatro ingredientes para preparar essa mousse: chocolate em pó, creme de leite, leite condensado e gelatina em pó sem sabor. 
-                    Basta misturar tudo no liquidificador para ver a mágica acontecer e ter uma mousse cremosa que derrete na boca na sua geladeira. 
-                    A facilidade de preparo torna esta sobremesa a opção perfeita para qualquer ocasião. Surpreenda-se com a simplicidade do preparo e a riqueza de sabores que essa receita proporciona. 
-                    Siga o passo a passo de como fazer mousse de chocolate fácil e desfrute desse doce que encanta todo mundo com a textura e o sabor marcantes.
+                    Mousse de chocolate é uma daquelas receitas que não tem jeito...
                 </p>
             
                 <a class="voltar-ao-inicio" href="#topo">Voltar ao início</a>
             </article>
 
-            <!--Torta de limão-->
+            <!-- Artigo: Torta de limão -->
             <article id="receita-tortadelimao">
                 <h3 id="torta">Torta de limão</h3>
                 <picture>    
@@ -267,7 +253,7 @@
                     <img id="receita-tortadelimao-imagem" src="images/torta.jpg" alt="imagem torta">
                 </picture>
 
-            <h4>Ingredientes</h4>
+                <h4>Ingredientes</h4>
                 <table class="tabela">
                     <tr>
                         <th class="coluna-tabela">Ingrediente</th>
@@ -307,20 +293,21 @@
                     </tr>   
                 </table>
 
+                <!-- Passos separados em Massa, Recheio e Cobertura -->
                 <h4>Passos</h4>
                 
                 <h5>Massa</h5>
                 <ol class="lista-passos">
-                    <li class="passos">Triture o biscoito de maisena em um liquidificador ou processador.</li>
+                    <li class="passos">Triture o biscoito de maisena...</li>
                     <li class="passos">Junte a margarina e bata mais um pouco.</li>
-                    <li class="passos">Despeje a massa em uma forma de fundo removível (27 cm de diâmetro).</li>
-                    <li class="passos">Com as mãos, espalhe os biscoitos triturados no fundo e nas laterais da forma, cobrindo toda área de maneira uniforme.</li>
+                    <li class="passos">Despeje a massa em uma forma...</li>
+                    <li class="passos">Com as mãos, espalhe os biscoitos triturados...</li>
                     <li class="passos">Leve ao forno médio (180° C), preaquecido, por aproximadamente 10 minutos.</li>
                 </ol>
 
                 <h5>Recheio</h5>
                 <ol class="lista-passos">
-                    <li class="passos">Bata todos os ingredientes no liquidificador (exceto as raspas de limão) até obter um creme liso e firme.</li>
+                    <li class="passos">Bata todos os ingredientes no liquidificador...</li>
                     <li class="passos">Recheie a massa já assada e leve à geladeira por 30 minutos.</li>
                 </ol>
 
@@ -328,42 +315,42 @@
                 <ol class="lista-passos">
                     <li class="passos">Bata as claras em neve e acrescente o açúcar.</li>
                     <li class="passos">Misture até obter um ponto de suspiro e leve ao forno até dourar.</li>
-                    <li class="passos">Desenforme a torta (sem retirar o fundo falso), despeje a cobertura e acrescente as raspas de limão.</li>
+                    <li class="passos">Desenforme a torta...</li>
                 </ol>
 
                 <h4>Descrição</h4>
                 <p class="descricao">
-                    Confira essa receita de torta de limão com bolacha, uma sobremesa tradicional, queridinha dos brasileiros e perfeita pra todas as horas! Ela é simples, sua massa é feita com biscoito maizena e o limão dá um sabor bem especial. 
-                    Com sua base crocante de biscoito e um recheio que derrete na boca, essa torta é um convite ao prazer gastronômico. Com ingredientes simples como biscoitos tipo maisena, leite condensado, suco de limão e creme de leite, 
-                    você poderá criar uma sobremesa que encanta à primeira vista e ao primeiro sabor. A leveza e o frescor do limão combinados com a textura macia do recheio fazem dessa torta uma opção perfeita para qualquer ocasião. 
-                    Surpreenda-se com a facilidade de preparo dessa torta de limão e deleite-se com cada pedaço dessa sobremesa refrescante e deliciosa. Siga o passo a passo dessa receita e descubra como é simples conquistar paladares com essa explosão de sabor.
+                    Confira essa receita de torta de limão com bolacha...
                 </p>
         
                 <a class="voltar-ao-inicio" href="#topo">Voltar ao início</a>
             </article>
         </section>
 
+        <!-- Rodapé com redes sociais -->
         <footer id="rodape"> 
             <p id="cabecalho-rodape">Conheça nossas redes sociais</p>
 
-            <!--Instagram-->
+            <!-- Instagram -->
             <picture>  
                 <source type="image/webp" srcset="images/instagram.webp">
                 <img id="instagram" src="images/instagram.jpg" alt="Logo insta">
             </picture>  
 
-            <!--Facebook-->
+            <!-- Facebook -->
             <picture>
                 <source type="image/webp" srcset="images/facebook.webp">
                 <img id="facebook" src="images/facebook.jpg" alt="Logo facebook">
             </picture>
 
-            <!--Youtube-->
+            <!-- Youtube -->
             <picture>    
                 <source type="image/webp" srcset="images/youtube.webp">
                 <img id="youtube" src="images/youtube.jpg" alt="Logo youtube">
             </picture>
         </footer>
+
+        <!-- Script JS externo -->
         <script src="script.js"></script>
     </body>
 </html>
